@@ -12,13 +12,14 @@ def prints_comparison(string1,string2)
 		end 
 	end
 
-	print digitcntr
-	if digitcntr > 1 then
-		return false
+	if digitcntr == 1 then
+		return true   # strings off by one
 	else
-		return true
+		return false  # strings same or off by more than one
 	end
 
 end
 # prints_comparison("123","143")
 # prints_comparison("78909","78808")
+# prints_comparison("12345","12345")
+# prints_comparison("0987654","0927654")
