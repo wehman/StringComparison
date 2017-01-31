@@ -17,13 +17,13 @@ def prints_comparison(string1,win_array,array_off_by_one)
 
 		for i in (0 .. string_length-1) do
 			if string1[i] != string2[i]
-				digitcntr = digitcntr + 1
+				digitcntr += 1
 			end
 		end
 
 		if digitcntr == 1
 		 	new_array[off_one_cntr] = string2
-		 	off_one_cntr = off_one_cntr + 1
+		 	off_one_cntr += 1
 #		puts "counter = ", off_one_cntr
 
 		 end
